@@ -16,10 +16,9 @@ async function momoPaymentBooking(amount, orderId) {
   }
 
   const orderInfo = "Thanh toán đơn hàng";
-  const redirectUrl =
-    process.env.DOMAIN_URL || "http://localhost:3000/booking-success";
+  const redirectUrl = "https://petz-client.vercel.app/booking-success";
   const ipnUrl =
-    "https://32e4-2405-4803-d74e-7e00-8df8-7cef-8593-b8d7.ngrok-free.app/api/payment/callback-paymentBooking";
+    "https://petz-server.vercel.app/api/payment/callback-paymentBooking";
   const requestId = orderId;
   const requestType = "captureWallet";
   const extraData = "";
